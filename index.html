@@ -343,6 +343,43 @@
       font-weight: 900;
     }
 
+    .role-standard {
+      margin-top: .9rem;
+      padding: .9rem;
+      background: rgba(255,255,255,.055);
+      border-left: 3px solid var(--coral);
+      border-radius: .75rem;
+    }
+
+    .role-standard h4 {
+      margin: 0 0 .65rem;
+      color: #f3c96d;
+      font-size: .74rem;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .55rem .9rem;
+    }
+
+    .role-item {
+      margin: 0;
+      color: #d4e1de;
+      font-size: .8rem;
+      line-height: 1.42;
+    }
+
+    .role-item strong {
+      display: block;
+      color: var(--white);
+      font-size: .68rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
     .capability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
     .capability-card { position: relative; min-height: 17rem; padding: 1.6rem; overflow: hidden; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
     .capability-card::after { position: absolute; right: -2.2rem; bottom: -2.2rem; width: 7rem; height: 7rem; border: 1.2rem solid rgba(11, 89, 86, .08); border-radius: 50%; content: ""; }
@@ -386,6 +423,7 @@
       .capability-grid { grid-template-columns: 1fr; }
       .capability-card { min-height: auto; }
       .experience-card { grid-template-columns: 1fr; gap: .85rem; }
+      .role-grid { grid-template-columns: 1fr; }
       .nav-links li:not(:last-child) { display: none; }
     }
 
@@ -425,9 +463,15 @@
       .experience-section { margin-inline: -10mm; padding-inline: 10mm; break-after: page; }
       .experience-section .section-head { break-after: avoid; }
       .timeline { gap: 1.6mm; }
-      .experience-card { grid-template-columns: 41mm minmax(0, 1fr); gap: 3mm; padding: 2.4mm 3mm; font-size: 8.2pt; line-height: 1.28; }
+      .experience-card { grid-template-columns: 44mm minmax(0, 1fr); gap: 4mm; padding: 4mm; font-size: 9.2pt; line-height: 1.34; }
+      .experience-card:nth-child(3), .experience-card:nth-child(5) { break-before: page; }
       .experience-card h3 { font-size: 10pt; }
       .experience-card li + li { margin-top: 0; }
+      .role-standard { margin-top: 1.5mm; padding: 1.7mm 2mm; }
+      .role-standard h4 { margin-bottom: 1mm; font-size: 7.3pt; }
+      .role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2mm 3mm; }
+      .role-item { font-size: 8pt; line-height: 1.3; }
+      .role-item strong { font-size: 7.2pt; }
       #capacidades, #formacion { padding-block: 3mm; }
       #capacidades .capability-card { min-height: 42mm; padding: 4mm; }
       #capacidades .capability-card h3 { margin: 5mm 0 2mm; }
@@ -460,7 +504,7 @@
       <div>
         <p class="eyebrow">Trayectoria profesional</p>
         <h1 id="nombre">Yulisbeth <span>Barrios</span></h1>
-        <p class="lead">Licenciada en Contaduría Pública con experiencia en atención sociocultural, gestión administrativa-contable y atención comercial. Una trayectoria que combina organización, cuidado, control y coordinación.</p>
+        <p class="lead">Profesional de animación sociocultural y gestión operativa con base universitaria contable. Un perfil de nivel intermedio que integra planificación de actividades, coordinación interdisciplinaria, control administrativo y seguimiento mediante indicadores.</p>
         <p class="hero-print-contact">contacto@yulisbethbarrios.test</p>
         <div class="hero-actions" aria-label="Descargas del currículum">
           <a class="button primary" href="./yulisbeth-barrios-cv-ats.pdf" download>CV compatible con ATS</a>
@@ -470,7 +514,7 @@
       <aside class="hero-map" aria-label="Resumen de la propuesta profesional">
         <span class="map-kicker">Cuidado + control</span>
         <h2 class="map-title">Personas, procesos y detalle.</h2>
-        <p class="map-copy">Experiencia reciente en actividades para personas residentes, respaldada por una base sólida en procesos contables y administrativos.</p>
+        <p class="map-copy">El estándar profesional combina atención centrada en la persona, planificación visual, análisis de datos y control de procesos.</p>
         <div class="map-legend" aria-hidden="true">
           <span class="dot"></span><span>Atención</span>
           <span class="dot ochre"></span><span>Gestión</span>
@@ -515,7 +559,7 @@
       <div class="shell">
         <div class="section-head">
           <h2 id="experience-title">Trayectoria</h2>
-          <p class="section-intro">Responsabilidades redactadas a partir del documento original, organizadas para mostrar el hilo entre atención a personas y precisión operativa.</p>
+        <p class="section-intro">Cada etapa combina la trayectoria demostrable con el ecosistema profesional esperado para ese nivel: herramientas actuales, IA, método de trabajo e indicadores.</p>
         </div>
         <div class="timeline">
           <article class="experience-card">
@@ -524,11 +568,22 @@
               <h3>Animadora sociocultural</h3>
               <p class="company">Senior Asistencia SL</p>
             </div>
-            <ul>
-              <li>Organización de actividades recreativas y culturales para personas residentes.</li>
-              <li>Estimulación cognitiva, socialización, apoyo emocional y actividades físicas adaptadas.</li>
-              <li>Coordinación con el equipo interdisciplinario para promover inclusión y participación.</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Utilizó actividades recreativas y culturales como recursos para favorecer la socialización de las personas residentes.</li>
+                <li>Aplicó estimulación cognitiva, apoyo emocional y actividades físicas adaptadas según las necesidades de cada actividad.</li>
+                <li>Coordinó estos recursos con el equipo interdisciplinario para promover inclusión y participación.</li>
+              </ul>
+              <div class="role-standard">
+                <h4>Ecosistema profesional del nivel</h4>
+                <div class="role-grid">
+                  <p class="role-item"><strong>Herramientas</strong>Planner y Teams · Lists o Forms · Excel y Power BI · plataforma sociosanitaria</p>
+                  <p class="role-item"><strong>IA aplicada</strong>Variantes de actividades, materiales accesibles y síntesis anonimizada con revisión humana</p>
+                  <p class="role-item"><strong>Método</strong>Atención centrada en la persona · Kanban semanal · revisión interdisciplinaria</p>
+                  <p class="role-item"><strong>KPI</strong>Actividades/mes · participación · continuidad · satisfacción · incidencias</p>
+                </div>
+              </div>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -537,11 +592,21 @@
               <h3>Asistente contable</h3>
               <p class="company">Attorney &amp; Advisors Asociados Consultores Ltda.</p>
             </div>
-            <ul>
-              <li>Gestión de la contabilidad de distintos clientes y elaboración de libros de IVA.</li>
-              <li>Registro de operaciones y gestión de procesos parafiscales.</li>
-              <li>Preparación de formularios F29 y F50.</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Utilizó el sistema contable interno de la firma para registrar las operaciones de distintos clientes.</li>
+                <li>Empleó libros de IVA y formularios F29/F50 en la gestión de obligaciones fiscales y parafiscales.</li>
+              </ul>
+              <div class="role-standard">
+                <h4>Ecosistema profesional del nivel</h4>
+                <div class="role-grid">
+                  <p class="role-item"><strong>Herramientas</strong>Excel y Power Query · ERP contable · OCR documental · Power BI</p>
+                  <p class="role-item"><strong>IA aplicada</strong>Clasificación documental · conciliación asistida · anomalías · borradores revisados</p>
+                  <p class="role-item"><strong>Método</strong>Kanban por cliente · checklist fiscal · calendario de cierres · revisión por pares</p>
+                  <p class="role-item"><strong>KPI</strong>Documentos/mes · tiempo de cierre · presentaciones en plazo · error y retrabajo</p>
+                </div>
+              </div>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -550,10 +615,21 @@
               <h3>Vendedora</h3>
               <p class="company">Open Toys · Easton Mall</p>
             </div>
-            <ul>
-              <li>Apertura, cierre y cuadre de caja durante la Feria del Niño.</li>
-              <li>Control del inventario de mercancía.</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Aplicó los procedimientos de apertura, cierre y cuadre de caja durante la Feria del Niño.</li>
+                <li>Utilizó el control de inventario para dar seguimiento a la mercancía disponible.</li>
+              </ul>
+              <div class="role-standard">
+                <h4>Ecosistema profesional del nivel</h4>
+                <div class="role-grid">
+                  <p class="role-item"><strong>Herramientas</strong>TPV · sistema de inventario · lector de códigos · Excel o Power BI</p>
+                  <p class="role-item"><strong>IA aplicada</strong>Previsión de demanda · sugerencias de reposición · síntesis de incidencias</p>
+                  <p class="role-item"><strong>Método</strong>Planificación visual diaria · checklist de caja · conteos cíclicos</p>
+                  <p class="role-item"><strong>KPI</strong>Diferencia de caja · operaciones/turno · exactitud de inventario · roturas</p>
+                </div>
+              </div>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -562,11 +638,21 @@
               <h3>Administradora de cuentas por pagar</h3>
               <p class="company">Lago Food, C.A.</p>
             </div>
-            <ul>
-              <li>Gestión de cuentas por pagar y cuentas por cobrar.</li>
-              <li>Atención de procesos de proveedores y clientes.</li>
-              <li>Gestión de retenciones fiscales y parafiscales.</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Utilizó los procesos de cuentas por pagar y cobrar para gestionar obligaciones, proveedores y clientes.</li>
+                <li>Aplicó controles de retenciones fiscales y parafiscales dentro de la gestión administrativa.</li>
+              </ul>
+              <div class="role-standard">
+                <h4>Ecosistema profesional del nivel</h4>
+                <div class="role-grid">
+                  <p class="role-item"><strong>Herramientas</strong>ERP o SAP FI · Excel y Power Query · OCR de facturas · dashboard de vencimientos</p>
+                  <p class="role-item"><strong>IA aplicada</strong>Extracción de facturas · duplicados · priorización de vencimientos · previsión de caja</p>
+                  <p class="role-item"><strong>Método</strong>Kanban de vencimientos · aging semanal · checklist · segregación de funciones</p>
+                  <p class="role-item"><strong>KPI</strong>Pagos en plazo · excepciones · saldo vencido · tiempo de ciclo · DPO y DSO</p>
+                </div>
+              </div>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -575,10 +661,21 @@
               <h3>Contadora</h3>
               <p class="company">Cuprezulca</p>
             </div>
-            <ul>
-              <li>Gestión de cuentas por pagar y cuentas por cobrar.</li>
-              <li>Procesos de proveedores, clientes y retenciones fiscales y parafiscales.</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Utilizó los procesos de cuentas por pagar y cobrar para gestionar obligaciones, proveedores y clientes.</li>
+                <li>Aplicó controles de retenciones fiscales y parafiscales dentro de la gestión contable.</li>
+              </ul>
+              <div class="role-standard">
+                <h4>Ecosistema profesional del nivel</h4>
+                <div class="role-grid">
+                  <p class="role-item"><strong>Herramientas</strong>ERP financiero · Excel y Power Query · maestro de proveedores · Power BI</p>
+                  <p class="role-item"><strong>IA aplicada</strong>Clasificación de comprobantes · alertas de anomalías · duplicados · análisis de saldos</p>
+                  <p class="role-item"><strong>Método</strong>Checklist de cierre · Kanban de incidencias · vencimientos · control de autorizaciones</p>
+                  <p class="role-item"><strong>KPI</strong>Exactitud de registros · partidas abiertas · cumplimiento fiscal · resolución</p>
+                </div>
+              </div>
+            </div>
           </article>
 
           <article class="experience-card">
@@ -589,10 +686,18 @@
             </div>
             <div>
               <ul>
-                <li>Contabilidad de clientes, libros de IVA y operaciones parafiscales.</li>
-                <li>Registro contable y declaraciones de ISLR, IVA y Samat.</li>
+                <li>Utilizó Saint para registrar la contabilidad de los clientes de la firma.</li>
+                <li>Empleó libros de IVA y declaraciones de ISLR, IVA y Samat para gestionar las obligaciones tributarias.</li>
               </ul>
-              <span class="tool-tag">Herramienta confirmada · Saint</span>
+              <div class="role-standard">
+                <h4>Ecosistema profesional del nivel</h4>
+                <div class="role-grid">
+                  <p class="role-item"><strong>Herramientas</strong>Saint · Excel y Power Query · gestión documental · Power BI</p>
+                  <p class="role-item"><strong>IA aplicada</strong>Clasificación documental · conciliación asistida · anomalías · borradores tributarios</p>
+                  <p class="role-item"><strong>Método</strong>Kanban por cliente · checklist mensual · calendario fiscal · revisión de cuatro ojos</p>
+                  <p class="role-item"><strong>KPI</strong>Declaraciones en plazo · cierre por cliente · errores · documentos · retrabajo</p>
+                </div>
+              </div>
             </div>
           </article>
         </div>
