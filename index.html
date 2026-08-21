@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trayectoria profesional de Yulisbeth Carolina Barrios Rojas en atención sociocultural, gestión administrativa-contable y comercio.">
+  <meta name="author" content="Yulisbeth Carolina Barrios Rojas">
+  <title>Yulisbeth Barrios · Trayectoria profesional</title>
+  <style>
+    :root {
+      --ink: #173332;
+      --muted: #556b68;
+      --paper: #f7f4ec;
+      --paper-deep: #eee8da;
+      --white: #fffdfa;
+      --petrol: #0b5956;
+      --petrol-dark: #083f3d;
+      --coral: #d9573f;
+      --ochre: #d79a2b;
+      --line: #c9d1ca;
+      --shadow: 0 22px 55px rgba(23, 51, 50, .12);
+      --radius: 1.35rem;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 92% 5%, rgba(215, 154, 43, .16), transparent 24rem),
+        radial-gradient(circle at 7% 28%, rgba(217, 87, 63, .10), transparent 26rem),
+        var(--paper);
+      font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--ochre);
+      outline-offset: 4px;
+      border-radius: .2rem;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 99;
+      top: .7rem;
+      left: .7rem;
+      padding: .75rem 1rem;
+      transform: translateY(-160%);
+      background: var(--white);
+      color: var(--petrol-dark);
+      border: 2px solid var(--petrol);
+      border-radius: .7rem;
+      font-weight: 800;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .site-header {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid rgba(23, 51, 50, .14);
+      background: rgba(247, 244, 236, .94);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: min(calc(100% - 2rem), var(--max));
+      min-height: 4.4rem;
+      margin: 0 auto;
+    }
+
+    .monogram {
+      display: grid;
+      place-items: center;
+      width: 2.65rem;
+      height: 2.65rem;
+      color: var(--white);
+      background: var(--petrol);
+      border-radius: 50% 50% 50% 18%;
+      font-weight: 900;
+      letter-spacing: -.05em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: .55rem .8rem;
+      border-radius: 99rem;
+      font-size: .88rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover { background: rgba(11, 89, 86, .09); }
+
+    .nav-links .download {
+      color: var(--white);
+      background: var(--petrol);
+    }
+
+    .nav-links .download:hover { background: var(--petrol-dark); }
+
+    main { overflow: clip; }
+
+    .shell { width: min(calc(100% - 2rem), var(--max)); margin-inline: auto; }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.18fr) minmax(18rem, .82fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: center;
+      min-height: 680px;
+      padding-block: clamp(4.5rem, 10vw, 8.5rem);
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin: 0 0 1.1rem;
+      color: var(--coral);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 2.4rem;
+      height: .22rem;
+      background: currentColor;
+      border-radius: 99rem;
+      content: "";
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 11ch;
+      margin-bottom: 1.35rem;
+      font-size: clamp(3.15rem, 7.4vw, 6.7rem);
+      line-height: .88;
+      letter-spacing: -.065em;
+    }
+
+    h1 span { color: var(--petrol); }
+
+    .lead {
+      max-width: 67ch;
+      margin-bottom: 1.8rem;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.6vw, 1.26rem);
+    }
+
+    .hero-print-contact { display: none; }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.15rem;
+      padding: .7rem 1.15rem;
+      border: 2px solid var(--petrol);
+      border-radius: 99rem;
+      color: var(--petrol-dark);
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .button.primary { color: var(--white); background: var(--petrol); }
+    .button:hover { transform: translateY(-2px); }
+
+    .hero-map {
+      position: relative;
+      min-height: 410px;
+      padding: 2.3rem;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--petrol-dark);
+      border-radius: 45% 1.8rem 45% 1.8rem;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-map::before,
+    .hero-map::after {
+      position: absolute;
+      border: 2px solid rgba(255,255,255,.22);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-map::before { inset: -16% 24% 38% -18%; }
+    .hero-map::after { inset: 44% -19% -21% 34%; }
+
+    .map-kicker { color: #f3c96d; font-size: .78rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+    .map-title { position: relative; z-index: 1; max-width: 13ch; margin: 3.5rem 0 1.3rem; font-size: clamp(2rem, 4vw, 3.4rem); line-height: .98; letter-spacing: -.045em; }
+    .map-copy { position: relative; z-index: 1; max-width: 32ch; color: #d5e5e1; }
+
+    .map-legend {
+      position: absolute;
+      z-index: 2;
+      right: 2rem;
+      bottom: 1.8rem;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: .45rem .75rem;
+      font-size: .78rem;
+    }
+
+    .dot { width: .8rem; height: .8rem; margin-top: .28rem; border-radius: 50%; background: var(--coral); }
+    .dot.ochre { background: var(--ochre); }
+
+    .section { padding-block: clamp(4.2rem, 8vw, 7.5rem); }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(12rem, .65fr) minmax(0, 1.35fr);
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 { margin-bottom: 0; font-size: clamp(2.15rem, 4.2vw, 4rem); line-height: .96; letter-spacing: -.052em; }
+    .section-intro { max-width: 65ch; margin: 0; color: var(--muted); }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 1rem;
+    }
+
+    .panel {
+      padding: clamp(1.4rem, 3vw, 2.4rem);
+      background: rgba(255, 253, 250, .82);
+      border: 1px solid rgba(23, 51, 50, .13);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 34px rgba(23,51,50,.06);
+    }
+
+    .panel h3 { margin-bottom: .35rem; font-size: 1.28rem; }
+    .panel-note { margin-bottom: 1.5rem; color: var(--muted); font-size: .9rem; }
+
+    .stacked-bar {
+      display: flex;
+      width: 100%;
+      height: 3.2rem;
+      margin-block: 1.2rem 1rem;
+      overflow: hidden;
+      border: 3px solid var(--white);
+      border-radius: 99rem;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+
+    .stacked-bar span { display: grid; place-items: center; min-width: 2.5rem; color: var(--white); font-size: .78rem; font-weight: 900; }
+    .bar-accounting { width: 66.666%; background: var(--petrol); }
+    .bar-care { width: 16.667%; background: var(--coral); }
+    .bar-retail { width: 16.667%; color: var(--ink) !important; background: var(--ochre); }
+
+    .legend-list { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; }
+    .legend-list li { display: grid; grid-template-columns: auto 1fr auto; gap: .7rem; align-items: center; }
+    .legend-list strong { font-variant-numeric: tabular-nums; }
+
+    .metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; }
+    .metric { padding: 1.1rem; color: var(--white); background: var(--petrol); border-radius: 1rem; }
+    .metric:nth-child(2) { color: var(--ink); background: #f2c86f; }
+    .metric:nth-child(3) { background: var(--coral); }
+    .metric:nth-child(4) { color: var(--ink); background: #d9e2db; }
+    .metric strong { display: block; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; }
+    .metric span { display: block; margin-top: .45rem; font-size: .82rem; font-weight: 750; }
+
+    .experience-section { background: var(--ink); color: var(--white); }
+    .experience-section .section-intro { color: #c7d7d3; }
+
+    .timeline { position: relative; display: grid; gap: 1rem; padding-left: 2.4rem; }
+    .timeline::before { position: absolute; inset: .7rem auto .7rem .72rem; width: 2px; background: linear-gradient(var(--coral), var(--ochre), #8ab7ad); content: ""; }
+
+    .experience-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: 12.5rem minmax(0, 1fr);
+      gap: 1.6rem;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 1.15rem;
+    }
+
+    .experience-card::before {
+      position: absolute;
+      top: 1.6rem;
+      left: -2.15rem;
+      width: .85rem;
+      height: .85rem;
+      background: var(--ochre);
+      border: 4px solid var(--ink);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--ochre);
+      content: "";
+    }
+
+    .experience-card time { color: #f3c96d; font-size: .78rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+    .experience-card h3 { margin-bottom: .2rem; font-size: 1.3rem; line-height: 1.15; }
+    .company { margin-bottom: 0; color: #a9c5bf; font-weight: 750; }
+    .experience-card ul { margin: 0; padding-left: 1.15rem; }
+    .experience-card li + li { margin-top: .35rem; }
+
+    .tool-tag {
+      display: inline-flex;
+      margin-top: .8rem;
+      padding: .34rem .65rem;
+      color: var(--ink);
+      background: #f3c96d;
+      border-radius: 99rem;
+      font-size: .75rem;
+      font-weight: 900;
+    }
+
+    .capability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .capability-card { position: relative; min-height: 17rem; padding: 1.6rem; overflow: hidden; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+    .capability-card::after { position: absolute; right: -2.2rem; bottom: -2.2rem; width: 7rem; height: 7rem; border: 1.2rem solid rgba(11, 89, 86, .08); border-radius: 50%; content: ""; }
+    .capability-card:nth-child(2)::after { border-color: rgba(217,87,63,.1); }
+    .capability-card:nth-child(3)::after { border-color: rgba(215,154,43,.14); }
+    .capability-card .index { color: var(--coral); font-size: .78rem; font-weight: 900; letter-spacing: .12em; }
+    .capability-card h3 { margin: 2rem 0 .8rem; font-size: 1.35rem; }
+    .capability-card p { color: var(--muted); }
+
+    .tools-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 1rem; }
+    .education { color: var(--white); background: var(--coral); }
+    .education .panel-note { color: #ffdfd8; }
+    .education strong { display: block; margin: 1.8rem 0 .4rem; font-size: clamp(1.65rem, 3vw, 2.55rem); line-height: 1.03; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
+    .chips li { padding: .55rem .75rem; background: var(--paper-deep); border-radius: .55rem; font-weight: 760; }
+
+    .contact {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(17rem, .8fr);
+      gap: 2rem;
+      align-items: center;
+      padding: clamp(2rem, 5vw, 4rem);
+      color: var(--white);
+      background: var(--petrol);
+      border-radius: 2rem 2rem 2rem .55rem;
+    }
+
+    .contact h2 { max-width: 11ch; }
+    .contact-links { display: grid; gap: .75rem; }
+    .contact-links a { display: flex; align-items: center; min-height: 3.2rem; padding: .75rem 1rem; border: 1px solid rgba(255,255,255,.42); border-radius: .8rem; font-weight: 800; text-decoration: none; }
+    .contact-links a:hover { background: rgba(255,255,255,.1); }
+
+    footer { padding-block: 2.4rem; color: var(--muted); font-size: .82rem; }
+    footer .shell { display: flex; justify-content: space-between; gap: 1rem; }
+
+    @media (max-width: 860px) {
+      .hero, .section-head, .dashboard, .tools-grid, .contact { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .hero-map { min-height: 340px; }
+      .capability-grid { grid-template-columns: 1fr; }
+      .capability-card { min-height: auto; }
+      .experience-card { grid-template-columns: 1fr; gap: .85rem; }
+      .nav-links li:not(:last-child) { display: none; }
+    }
+
+    @media (max-width: 520px) {
+      .shell, .nav { width: min(calc(100% - 1.2rem), var(--max)); }
+      .hero { padding-top: 3.3rem; }
+      h1 { font-size: clamp(2.75rem, 17vw, 4.2rem); }
+      .hero-map { min-height: 325px; padding: 1.5rem; }
+      .map-legend { right: 1.4rem; bottom: 1.3rem; }
+      .metrics { grid-template-columns: 1fr; }
+      .timeline { padding-left: 1.8rem; }
+      .timeline::before { left: .45rem; }
+      .experience-card::before { left: -1.7rem; }
+      footer .shell { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+
+    @page { size: A4 landscape; margin: 10mm; }
+
+    @media print {
+      :root { --paper: #fff; --white: #fff; }
+      html { font-size: 9pt; }
+      body { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .site-header, .hero-actions, .skip-link { display: none !important; }
+      .shell { width: 100%; }
+      .hero { min-height: 178mm; padding: 8mm 2mm; break-after: page; }
+      .hero-print-contact { display: block; margin-top: 5mm; color: var(--petrol-dark); font-weight: 800; }
+      .hero-map { min-height: 126mm; box-shadow: none; }
+      .section { padding: 5mm 0; }
+      .section-head { margin-bottom: 4mm; }
+      .dashboard { break-after: page; }
+      .panel, .capability-card, .experience-card { box-shadow: none; break-inside: avoid; }
+      .experience-section { margin-inline: -10mm; padding-inline: 10mm; break-after: page; }
+      .experience-section .section-head { break-after: avoid; }
+      .timeline { gap: 1.6mm; }
+      .experience-card { grid-template-columns: 41mm minmax(0, 1fr); gap: 3mm; padding: 2.4mm 3mm; font-size: 8.2pt; line-height: 1.28; }
+      .experience-card h3 { font-size: 10pt; }
+      .experience-card li + li { margin-top: 0; }
+      #capacidades, #formacion { padding-block: 3mm; }
+      #capacidades .capability-card { min-height: 42mm; padding: 4mm; }
+      #capacidades .capability-card h3 { margin: 5mm 0 2mm; }
+      #formacion .panel { padding: 4mm; }
+      .contact-section { display: none !important; }
+      .capability-grid, .tools-grid, .contact { break-inside: avoid; }
+      .contact { margin-top: 5mm; }
+      footer { padding: 4mm 0 0; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="monogram" href="#inicio" aria-label="Ir al inicio">YB</a>
+      <ul class="nav-links">
+        <li><a href="#trayectoria">Trayectoria</a></li>
+        <li><a href="#capacidades">Capacidades</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a class="download" href="./yulisbeth-barrios-cv-ats.pdf" download>Descargar CV ATS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero shell" id="inicio" aria-labelledby="nombre">
+      <div>
+        <p class="eyebrow">Trayectoria profesional</p>
+        <h1 id="nombre">Yulisbeth <span>Barrios</span></h1>
+        <p class="lead">Licenciada en Contaduría Pública con experiencia en atención sociocultural, gestión administrativa-contable y atención comercial. Una trayectoria que combina organización, cuidado, control y coordinación.</p>
+        <p class="hero-print-contact">contacto@yulisbethbarrios.test</p>
+        <div class="hero-actions" aria-label="Descargas del currículum">
+          <a class="button primary" href="./yulisbeth-barrios-cv-ats.pdf" download>CV compatible con ATS</a>
+          <a class="button" href="./yulisbeth-barrios-cv-planning.pdf" download>Resumen tipo planning</a>
+        </div>
+      </div>
+      <aside class="hero-map" aria-label="Resumen de la propuesta profesional">
+        <span class="map-kicker">Cuidado + control</span>
+        <h2 class="map-title">Personas, procesos y detalle.</h2>
+        <p class="map-copy">Experiencia reciente en actividades para personas residentes, respaldada por una base sólida en procesos contables y administrativos.</p>
+        <div class="map-legend" aria-hidden="true">
+          <span class="dot"></span><span>Atención</span>
+          <span class="dot ochre"></span><span>Gestión</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section shell" aria-labelledby="panel-title">
+      <div class="section-head">
+        <h2 id="panel-title">Mapa de experiencia</h2>
+        <p class="section-intro">Una lectura de las seis experiencias que figuran en el CV original. Los datos representan número de puestos por ámbito y no porcentajes de rendimiento ni duración acumulada.</p>
+      </div>
+      <div class="dashboard">
+        <article class="panel" aria-labelledby="composition-title">
+          <h3 id="composition-title">Composición de la trayectoria</h3>
+          <p class="panel-note">Unidad: experiencias profesionales confirmadas.</p>
+          <div class="stacked-bar" role="img" aria-label="Cuatro experiencias administrativas y contables, una sociocultural y una comercial, de un total de seis">
+            <span class="bar-accounting">4</span>
+            <span class="bar-care">1</span>
+            <span class="bar-retail">1</span>
+          </div>
+          <ul class="legend-list">
+            <li><span class="dot" style="background:var(--petrol)"></span><span>Administración y contabilidad</span><strong>4</strong></li>
+            <li><span class="dot"></span><span>Atención sociocultural</span><strong>1</strong></li>
+            <li><span class="dot ochre"></span><span>Comercio y caja</span><strong>1</strong></li>
+          </ul>
+        </article>
+        <article class="panel" aria-labelledby="evidence-title">
+          <h3 id="evidence-title">Evidencias del recorrido</h3>
+          <p class="panel-note">Conteos directos del documento fuente.</p>
+          <div class="metrics">
+            <div class="metric"><strong>6</strong><span>experiencias</span></div>
+            <div class="metric"><strong>3</strong><span>ámbitos funcionales</span></div>
+            <div class="metric"><strong>4</strong><span>roles contables</span></div>
+            <div class="metric"><strong>2016</strong><span>titulación universitaria</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="trayectoria" aria-labelledby="experience-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="experience-title">Trayectoria</h2>
+          <p class="section-intro">Responsabilidades redactadas a partir del documento original, organizadas para mostrar el hilo entre atención a personas y precisión operativa.</p>
+        </div>
+        <div class="timeline">
+          <article class="experience-card">
+            <div>
+              <time datetime="2022-09/2025-12">Sep. 2022 — Dic. 2025</time>
+              <h3>Animadora sociocultural</h3>
+              <p class="company">Senior Asistencia SL</p>
+            </div>
+            <ul>
+              <li>Organización de actividades recreativas y culturales para personas residentes.</li>
+              <li>Estimulación cognitiva, socialización, apoyo emocional y actividades físicas adaptadas.</li>
+              <li>Coordinación con el equipo interdisciplinario para promover inclusión y participación.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div>
+              <time datetime="2018-09/2021-07">Sep. 2018 — Jul. 2021</time>
+              <h3>Asistente contable</h3>
+              <p class="company">Attorney &amp; Advisors Asociados Consultores Ltda.</p>
+            </div>
+            <ul>
+              <li>Gestión de la contabilidad de distintos clientes y elaboración de libros de IVA.</li>
+              <li>Registro de operaciones y gestión de procesos parafiscales.</li>
+              <li>Preparación de formularios F29 y F50.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div>
+              <time datetime="2018-07/2018-08">Jul. 2018 — Ago. 2018</time>
+              <h3>Vendedora</h3>
+              <p class="company">Open Toys · Easton Mall</p>
+            </div>
+            <ul>
+              <li>Apertura, cierre y cuadre de caja durante la Feria del Niño.</li>
+              <li>Control del inventario de mercancía.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div>
+              <time datetime="2017-12/2018-05">Dic. 2017 — May. 2018</time>
+              <h3>Administradora de cuentas por pagar</h3>
+              <p class="company">Lago Food, C.A.</p>
+            </div>
+            <ul>
+              <li>Gestión de cuentas por pagar y cuentas por cobrar.</li>
+              <li>Atención de procesos de proveedores y clientes.</li>
+              <li>Gestión de retenciones fiscales y parafiscales.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div>
+              <time datetime="2017-09/2017-11">Sep. 2017 — Nov. 2017</time>
+              <h3>Contadora</h3>
+              <p class="company">Cuprezulca</p>
+            </div>
+            <ul>
+              <li>Gestión de cuentas por pagar y cuentas por cobrar.</li>
+              <li>Procesos de proveedores, clientes y retenciones fiscales y parafiscales.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div>
+              <time datetime="2017-04/2017-08">Abr. 2017 — Ago. 2017</time>
+              <h3>Analista contable</h3>
+              <p class="company">Portillo Mejías &amp; Asociados</p>
+            </div>
+            <div>
+              <ul>
+                <li>Contabilidad de clientes, libros de IVA y operaciones parafiscales.</li>
+                <li>Registro contable y declaraciones de ISLR, IVA y Samat.</li>
+              </ul>
+              <span class="tool-tag">Herramienta confirmada · Saint</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="capacidades" aria-labelledby="capabilities-title">
+      <div class="section-head">
+        <h2 id="capabilities-title">Capacidades</h2>
+        <p class="section-intro">Tres núcleos respaldados por tareas concretas de la trayectoria.</p>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card">
+          <span class="index">01 · PERSONAS</span>
+          <h3>Atención sociocultural</h3>
+          <p>Actividades recreativas y culturales, estimulación cognitiva, socialización, apoyo emocional, actividades físicas adaptadas e inclusión.</p>
+        </article>
+        <article class="capability-card">
+          <span class="index">02 · PROCESOS</span>
+          <h3>Gestión contable</h3>
+          <p>Registro contable, libros de IVA, cuentas por pagar y cobrar, proveedores, clientes, retenciones y declaraciones.</p>
+        </article>
+        <article class="capability-card">
+          <span class="index">03 · CONTROL</span>
+          <h3>Operación comercial</h3>
+          <p>Apertura, cierre y cuadre de caja, junto con control de inventario de mercancía.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="formacion" aria-labelledby="education-title">
+      <div class="section-head">
+        <h2 id="education-title">Formación y herramientas</h2>
+        <p class="section-intro">Base académica y aplicaciones declaradas en el currículo de origen.</p>
+      </div>
+      <div class="tools-grid">
+        <article class="panel education">
+          <h3>Formación universitaria</h3>
+          <strong>Licenciada en Contaduría Pública</strong>
+          <p>Universidad Dr. Rafael Belloso Chacín (URBE) · Maracaibo, Venezuela · 2016</p>
+        </article>
+        <article class="panel">
+          <h3>Herramientas y conocimientos</h3>
+          <p class="panel-note">SAP R/3 FI figura con nivel inicial; el resto aparece como conocimiento general en el documento original.</p>
+          <ul class="chips" aria-label="Herramientas declaradas">
+            <li>Microsoft Excel</li>
+            <li>Microsoft Word</li>
+            <li>PowerPoint</li>
+            <li>Galac</li>
+            <li>Saint Enterprise</li>
+            <li>Adapta Pro</li>
+            <li>SAP R/3 FI · inicial</li>
+            <li>Inglés · medio</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell contact-section" aria-labelledby="contact-title">
+      <div class="contact">
+        <div>
+          <p class="eyebrow" style="color:#f3c96d">Contacto</p>
+          <h2 id="contact-title">Conversemos.</h2>
+          <p>Yulisbeth Carolina Barrios Rojas</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:contacto@yulisbethbarrios.test">contacto@yulisbethbarrios.test</a>
+          <a href="./yulisbeth-barrios-cv-planning.pdf" download>Descargar resumen planning</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <span>Yulisbeth Carolina Barrios Rojas</span>
+      <span>Actualizado el 21 de agosto de 2026</span>
+    </div>
+  </footer>
+</body>
+</html>
